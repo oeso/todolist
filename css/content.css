@@ -4,21 +4,25 @@ body {background:#f0f0f0}
 
 .wrap {min-width:320px; padding-top:40px}
 .header{position:fixed;z-index:100;left:0;top:0;right:0;min-height:40px;background:#fff;-webkit-box-shadow:0 5px 2px rgba(0,0,0,.3); -mobox-shadow:0 5px 2px rgba(0,0,0,.3); box-shadow:0 2px 3px rgba(0,0,0,.2)}
-.regist-box .label-option {position:absolute; z-index:10;left:6px; top:10px; width:60px; height:20px; padding-left:5px; font-size:12px; color:#000; border:1px solid #a6a6a6; border-radius:6px; background:#fff url(../img/select_bg.jpg) 49px 4px no-repeat; -webkit-background-size:6px 11px; -moz-background-size:6px 11px; background-size:6px 11px; cursor:pointer}
-.regist-box .select-option {position:absolute; left:6px; top:10px; width:60px; height:20px; font-size:12px; color:#000; border:1px solid #a6a6a6; -webkit-border-radius:4px; -moz-border-radius:4px; border-radius:4px; -webkit-appearance:none; appearance:none; background:#fff url(../img/select_bg.jpg) 49px 4px no-repeat; -webkit-background-size:6px 11px; -moz-background-size:6px 11px; background-size:6px 11px}
-.regist-box .inp-head {display:block;height:40px;margin:0 80px 0 73px}
-.regist-box .inp-head input[type="text"] {display:block;width:100%;height:40px}
-.regist-box .btn-add {position:absolute; right:0; top:0; width:80px; height:40px;color:#fff;text-align:center;background:#ff5000}
+.regist-box {padding:10px}
+.regist-box .label-option {position:absolute; z-index:10;left:6px; top:10px; width:60px; height:24px; padding-left:5px; font-size:13px; color:#000; border:1px solid #a6a6a6; border-radius:6px; background:#fff url(../img/select_bg.jpg) 49px 4px no-repeat; -webkit-background-size:6px 11px; -moz-background-size:6px 11px; background-size:6px 11px; cursor:pointer}
+.regist-box .select-option {position:absolute; right:10px; top:10px; width:70px; height:24px; font-size:13px; border:1px solid #a6a6a6; -webkit-border-radius:4px; -moz-border-radius:4px; border-radius:3px}
+.regist-box .inp-head {display:block; height:100px; margin:0 80px 0 0}
+.regist-box .inp-head textarea {display:block;width:100%;height:50px; outline:none}
+.regist-box .btn-addbox {position:absolute; left:10px; bottom:10px; right:10px; }
+.regist-box .btn-add {width:100%; height:30px;color:#fff;text-align:center;background:#4a8ff6}
 
-.filter-box {height:83px;padding:12px 8px 0;background:#f0f0f0}
+.filter-box {padding:12px 10px 10px; background:#f0f0f0}
 .filter-box .filter-list:after {content:""; display:block; clear:both}
-.filter-box .label-filter {display:block; float:left; margin:0 3px 4px 0; min-width:39px; max-width:62px; height:28px; padding:3px 2px 0 0; color:#000; text-align:center; background:#fff; border:1px solid #a6a6a6; letter-spacing:-1px; cursor:pointer}
+.filter-box .button-filter {display:block; float:left; margin:0 3px 7px 0; min-width:39px; height:30px; padding:0 3px 0 0; color:#000; text-align:center; background:#fff; letter-spacing:-1px; cursor:pointer; border-radius:3px}
+.filter-box .label-filter {display:block; float:left; margin:0 3px 7px 0; min-width:39px;height:30px; padding:4px 3px 0 0; color:#000; text-align:center; background:#fff; letter-spacing:-1px; cursor:pointer; border-radius:3px}
 .filter-box .input-filter {position:absolute;left:-3000px;color:transparent}
 .filter-box .input-filter:checked+.label-filter,
-.filter-box .label-filter.on {color:#fff; background:#ff5000}
+.filter-box .label-filter.on, 
+.filter-box .button-filter.on {color:#fff; background:#4a8ff6}
 
 .list {box-sizing:border-box;}
-.list .item {position:relative; padding:10px 48px 10px 40px; min-height:62px; background:#fff; border-bottom:1px solid #ccc}
+.list .item {position:relative; padding:10px 20px 10px 40px; min-height:62px; background:#fff; border-bottom:1px solid #ccc}
 .list .item:first-child {border-top:1px solid #ccc}
 .list .checkbox-list {position:absolute; left:13px; top:50%; margin-top:-7px; width:14px;height:14px;border:1px solid #b7b7b7; border-radius:3px}
 .list .checkbox-list:checked {background:#3496ff url(../img/checked.jpg) 50% 50% no-repeat; -webkit-background-size:10px 10px; -moz-background-size:10px 10px; background-size:10px 10px; border-radius:3px; border-color:#3496ff}
@@ -27,7 +31,6 @@ body {background:#f0f0f0}
 .list .point {display:block; color:#aaa}
 .list .date {display:block; color:#aaa}
 .list .item-title {font-size:15px}
-.list .btn_moving {position:absolute; right:0; top:0; width:40px; height:100%; background:#c0c0c0; color:transparent; font-size:1px; line-height:0}
 .complete .item-title {text-decoration:line-through}
 
 .item-edit {position:relative; margin-top:10px; padding-right:50px}

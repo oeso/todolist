@@ -24,24 +24,26 @@
                 <form>
                     <legend class="blind">추가 To do list 입력</legend>
                     <fieldset>
-                        <label for="import" class="label-option">중요도</label>
+                        <!-- <label for="import" class="label-option">중요도</label> -->
                         <select name="" id="import" class="select-option" ng-model="inputOption" focus-on="focusGo">
                             <option value="매우중요" selected>매우중요</option>
                             <option value="중요">중요</option>
                             <option value="보통">보통</option>
                         </select>
-                        <div class="inp-head"><input type="text" ng-model="inputText" placeholder="할 일을 입력하세요." title="제목 입력" focus-on="focusGoInptxt"></div>
-                        <button type="button" class="btn-add" ng-click="insertTodo(inputOption,inputText)">추가</button>
+                        <div class="inp-head">
+                            <textarea name="" id="" cols="30" rows="10" ng-model="inputText" focus-on="focusGoInptxt" placeholder="할 일을 입력하세요."></textarea>
+                        </div>
+                        <div class="btn-addbox"><button type="button" class="btn-add" ng-click="insertTodo(inputOption,inputText)">추가</button></div>
                     </fieldset>
                 </form>
             </div>
         </header>
 
-        <form>
+        <form name="forms" ng-submit="goSearch(forms)">
             <div class="filter-box">
                 <fieldset class="filter-list">
                     <legend class="blind">To do list 필터 중요도</legend>
-                    <button type="button" class="label-filter" ng-class="{on:names1.all}" ng-click="otherDeactive1()">모두</button>
+                    <button type="button" class="button-filter" ng-class="{on:names1.all}" ng-click="otherDeactive1()">모두</button>
                     
                     <input type="checkbox" id="typeBest" class="input-filter" ng-model="names1.importance1" ng-true-value="매우중요" ng-false-value="false" ng-click="toggleActive()"><label for="typeBest" class="label-filter">매우 중요</label>
                     <input type="checkbox" id="typeMore" class="input-filter" ng-model="names1.importance2" ng-true-value="중요" ng-false-value="false" ng-click="toggleActive()"><label for="typeMore" class="label-filter">중요</label>
@@ -50,11 +52,12 @@
 
                 <fieldset class="filter-list">
                     <legend class="blind">To do list 필터 완료도</legend>
-                    <button type="button" class="label-filter" ng-class="{on:names.all}" ng-click="otherDeactive()">모두</button>
+                    <button type="button" class="button-filter" ng-class="{on:names.all}" ng-click="otherDeactive()">모두</button>
                     
                     <input type="checkbox" name="complete" id="typeEnd2" class="input-filter" ng-model="names.complete" ng-true-value="true" ng-false-value="false" ng-click="active()"><label for="typeEnd2" class="label-filter">완료</label>
                     <input type="checkbox" name="complete" id="typeIng2" class="input-filter" ng-model="names.completeNot" ng-true-value="true" ng-false-value="false" ng-click="active()"><label for="typeIng2" class="label-filter">미완료</label>
                 </fieldset>
+                
             </div>
         </form>
 
@@ -72,14 +75,11 @@
                     <span class="point">중요도:{{list.importance}}</span>
                     <span class="date">추가일:{{list.date}}</span>
                     <h2 class="item-title">{{list.title}}</h2>
-
-                    <button type="button" class="btn_moving">순서이동</button>
                 </li>
             </ul>
 
         </section>
     </div>
-
 
 </body>
 </html>

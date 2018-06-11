@@ -37,6 +37,21 @@ app.controller('todoList', ['$scope', '$rootScope', '$filter', function($scope,$
 
     $scope.todolist = data.entitys ? data.entitys : [];
 
+    $scope.goSearch = function(e){
+        console.log(e);
+    }
+    $scope.master = {};
+
+    $scope.update = function(user) {
+      $scope.master = angular.copy(user);
+    };
+
+    $scope.reset = function() {
+      $scope.user = angular.copy($scope.master);
+    };
+
+    $scope.reset();
+
     $scope.insertTodo = function(inputOption,inputText){
         if(!inputOption){
             alert("중요도를 선택하세요!");
