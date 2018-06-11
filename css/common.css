@@ -1,20 +1,20 @@
 @charset "UTF-8";
 
 html,body,div,ul,ol,li,section,article,header,footer,h1,h2,h3,h4,h5,h6,span,p,textarea,dl,dt,dd,address,label,fieldset,legend,input,select,form,a,button {margin:0;padding:0;border:0;-webkit-box-sizing:border-box; -moz-box-sizing:border-box; box-sizing:border-box}
-body,th,td,input,select,textarea,button{font-size:14px;line-height:1.5;font-family:AppleSDGothicNeo,"Helvetica","Malgun Gothic","맑은고딕",sans-serif;color:#000}
+body,th,td,input,select,textarea,button{font-size:13px;line-height:1.5;font-family:AppleSDGothicNeo,"Helvetica","Malgun Gothic","맑은고딕",sans-serif;color:#000}
 html {-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;-webkit-font-smoothing:antialiased;}
 fieldset,img {border:0}
 img {max-width:100%;vertical-align:top}
 dl,ul,ol,menu,li {list-style:none}
-h1,h2,h3,h4,h5,h6 {font-size:14px;font-weight:normal}
+h1,h2,h3,h4,h5,h6 {font-size:13px;font-weight:normal}
 article,aside,canvas,details,figcaption,figure,footer,header,nav,section,summary {display:block}
 blockquote, q {quotes:none}
-input,select,textarea,button {font-size:14px;vertical-align:top}
+input,select,textarea,button {font-size:13px;vertical-align:top}
 button {border:0;background-color:transparent;cursor:pointer}
 table {empty-cells:show;border-collapse:collapse;border-spacing:0;border:0;table-layout:fixed;}
 input {-webkit-appearance:none;border-radius:0}
 button {-webkit-appearance:button;border-radius:0}
-body,th,td,input,select,textarea,button {font-size:14px;line-height:1.5;font-family:AppleSDGothicNeo,"Helvetica","Malgun Gothic","맑은고딕",sans-serif;color:#464a5b;padding:0px;margin:0px;}
+body,th,td,input,select,textarea,button {font-size:13px;line-height:1.5;font-family:AppleSDGothicNeo,"Helvetica","Malgun Gothic","맑은고딕",sans-serif;color:#464a5b;padding:0px;margin:0px;}
 a {color:#464a5b;text-decoration:none}
 a:active, a:hover {text-decoration:none}
 hr {display:none}

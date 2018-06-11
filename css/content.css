@@ -2,15 +2,20 @@
 
 body {background:#f0f0f0}
 
-.wrap {min-width:320px; padding-top:40px}
+.wrap {min-width:320px; padding-top:50px}
 .header{position:fixed;z-index:100;left:0;top:0;right:0;min-height:40px;background:#fff;-webkit-box-shadow:0 5px 2px rgba(0,0,0,.3); -mobox-shadow:0 5px 2px rgba(0,0,0,.3); box-shadow:0 2px 3px rgba(0,0,0,.2)}
 .regist-box {padding:10px}
-.regist-box .label-option {position:absolute; z-index:10;left:6px; top:10px; width:60px; height:24px; padding-left:5px; font-size:13px; color:#000; border:1px solid #a6a6a6; border-radius:6px; background:#fff url(../img/select_bg.jpg) 49px 4px no-repeat; -webkit-background-size:6px 11px; -moz-background-size:6px 11px; background-size:6px 11px; cursor:pointer}
-.regist-box .select-option {position:absolute; right:10px; top:10px; width:70px; height:24px; font-size:13px; border:1px solid #a6a6a6; -webkit-border-radius:4px; -moz-border-radius:4px; border-radius:3px}
-.regist-box .inp-head {display:block; height:100px; margin:0 80px 0 0}
-.regist-box .inp-head textarea {display:block;width:100%;height:50px; outline:none}
-.regist-box .btn-addbox {position:absolute; left:10px; bottom:10px; right:10px; }
-.regist-box .btn-add {width:100%; height:30px;color:#fff;text-align:center;background:#4a8ff6}
+.label-option {position:absolute; z-index:10;left:6px; top:10px; width:60px; height:24px; padding-left:5px; font-size:13px; color:#000; border:1px solid #a6a6a6; border-radius:6px; background:#fff url(../img/select_bg.jpg) 49px 4px no-repeat; -webkit-background-size:6px 11px; -moz-background-size:6px 11px; background-size:6px 11px; cursor:pointer}
+.select-option {position:absolute; right:10px; top:10px; width:70px; height:24px; font-size:13px; border:1px solid #a6a6a6; -webkit-border-radius:4px; -moz-border-radius:4px; border-radius:3px}
+.inp-head {display:block; margin:0 80px 0 0}
+.inp-head textarea {display:block;width:100%; height:28px; border:1px solid #f2f2f2;  -webkit-transition:all .4s; transition:all .4s}
+.inp-head textarea:focus,
+.inp-head textarea.on {height:80px}
+.btn-addbox {position:absolute; right:10px; top:10px; width:50px;}
+.btn-add {width:100%; height:30px;color:#fff;text-align:center;background:#4a8ff6}
+
+.inp-radio-box {display:none; padding-top:10px}
+.inp-head.on + .inp-radio-box {display:block}
 
 .filter-box {padding:12px 10px 10px; background:#f0f0f0}
 .filter-box .filter-list:after {content:""; display:block; clear:both}
@@ -21,16 +26,18 @@ body {background:#f0f0f0}
 .filter-box .label-filter.on, 
 .filter-box .button-filter.on {color:#fff; background:#4a8ff6}
 
+.inpRadio {display:inline-block; width:18px;height:18px;border:1px solid #000; -webkit-appearance:radio; appearance:radio; ; vertical-align:top}
+.inpRadioLabel {display:inline-block; position:relative; top:-1px; margin-right:8px; vertical-align:top}
+
 .list {box-sizing:border-box;}
-.list .item {position:relative; padding:10px 20px 10px 40px; min-height:62px; background:#fff; border-bottom:1px solid #ccc}
-.list .item:first-child {border-top:1px solid #ccc}
-.list .checkbox-list {position:absolute; left:13px; top:50%; margin-top:-7px; width:14px;height:14px;border:1px solid #b7b7b7; border-radius:3px}
+.list .item {position:relative; margin:10px 20px; padding:10px 20px 10px 40px; min-height:62px; background:#fff}
+.list .checkbox-list {position:absolute; left:13px; top:50%; margin-top:-7px; width:14px;height:14px;border:1px solid #b7b7b7; border-radius:2px}
 .list .checkbox-list:checked {background:#3496ff url(../img/checked.jpg) 50% 50% no-repeat; -webkit-background-size:10px 10px; -moz-background-size:10px 10px; background-size:10px 10px; border-radius:3px; border-color:#3496ff}
 .list .label-list {position:absolute; left:0; top:0; width:40px; height:100%}
-.list .select-option {display:inline-block; width:60px; height:20px; font-size:12px; color:#000; border:1px solid #a6a6a6; -webkit-border-radius:4px; -moz-border-radius:4px; border-radius:4px; -webkit-appearance:none; appearance:none; background:#fff url(../img/select_bg.jpg) 49px 4px no-repeat; -webkit-background-size:6px 11px; -moz-background-size:6px 11px; background-size:6px 11px}
+.list .select-option {display:inline-block; width:60px; height:20px; font-size:12px; color:#000; border:1px solid #a6a6a6; -webkit-border-radius:4px; -moz-border-radius:4px; border-radius:4px; -webkit-appearance:none; appearance:none; background:#fff url(../img/select_bg.jpg) 49px 4px no-repeat; -webkit-background-size:6px 11px; -moz-background-size:6px 11px; background-size:6px 11px; background-color:#fff}
 .list .point {display:block; color:#aaa}
-.list .date {display:block; color:#aaa}
-.list .item-title {font-size:15px}
+.list .date {display:block; position:absolute;right:10px;top:10px; color:#aaa}
+.list .item-title {padding-top:5px; font-size:13px}
 .complete .item-title {text-decoration:line-through}
 
 .item-edit {position:relative; margin-top:10px; padding-right:50px}

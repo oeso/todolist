@@ -24,14 +24,13 @@
                 <form>
                     <legend class="blind">추가 To do list 입력</legend>
                     <fieldset>
-                        <!-- <label for="import" class="label-option">중요도</label> -->
-                        <select name="" id="import" class="select-option" ng-model="inputOption" focus-on="focusGo">
-                            <option value="매우중요" selected>매우중요</option>
-                            <option value="중요">중요</option>
-                            <option value="보통">보통</option>
-                        </select>
-                        <div class="inp-head">
-                            <textarea name="" id="" cols="30" rows="10" ng-model="inputText" focus-on="focusGoInptxt" placeholder="할 일을 입력하세요."></textarea>
+                        <div class="inp-head" ng-class="{'on':focusInStyle}" >
+                            <textarea name="" id="" cols="30" rows="10" class="inp-textarea" ng-focus="focusIn()" ng-blur="focusOut();" ng-class="{'on':focusInStyle}" ng-model="inputText" focus-on="focusGoInptxt" placeholder="할 일을 입력하세요."></textarea>
+                        </div>
+                        <div class="inp-radio-box">
+                            <input type="radio" name="inpImpor" id="inp1" class="inpRadio"><label for="inp1" class="inpRadioLabel">보통</label>
+                            <input type="radio" name="inpImpor" id="inp2" class="inpRadio"><label for="inp2" class="inpRadioLabel">중요</label>
+                            <input type="radio" name="inpImpor" id="inp3" class="inpRadio"><label for="inp3" class="inpRadioLabel">매우중요</label>
                         </div>
                         <div class="btn-addbox"><button type="button" class="btn-add" ng-click="insertTodo(inputOption,inputText)">추가</button></div>
                     </fieldset>
@@ -72,8 +71,8 @@
                     <label for="{{'checking'+$index}}" class="label-list"><span class="blind">{{list.title}}</span></label>
 
 
-                    <span class="point">중요도:{{list.importance}}</span>
-                    <span class="date">추가일:{{list.date}}</span>
+                    <span class="point">{{list.importance}}</span>
+                    <span class="date">{{list.date}}</span>
                     <h2 class="item-title">{{list.title}}</h2>
                 </li>
             </ul>
