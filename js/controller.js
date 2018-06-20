@@ -79,6 +79,9 @@ app.controller('todoList', ['$scope', '$rootScope', '$filter', function($scope,$
     $scope.focusOut = function(){
         $scope.focusInStyle = false;
     }
+    $scope.test = function(){
+        console.log("test");
+    }
 
     $scope.changeStatus = function(idx){
         if( $scope.todolist[idx].status ){

@@ -1,0 +1,26 @@
+{
+  "name": "todolist",
+  "version": "1.0.0",
+  "description": "###START : 2018-06-08 ##할 일을 추가하고 수정하는 웹 어플리케이션   ##주 사용 언어 : node.js, express.js, JAVASCRIPT, HTML, CSS   ##번들링 : GRUNT",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/oeso/todolist.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/oeso/todolist/issues"
+  },
+  "homepage": "https://github.com/oeso/todolist#readme",
+  "dependencies": {
+    "express": "^4.16.3"
+  },
+  "devDependencies": {
+    "grunt": "^1.0.3",
+    "grunt-contrib-concat": "^1.0.1"
+  }
+}
