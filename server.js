@@ -1,9 +1,7 @@
 var express = require("express");
 var app = express();
 
-app.get("/", function(req,res){
-    res.send("hello~");
-});
+
 
 //app.get("/login", function(req,res){
 //    res.send("로그인 페이지");
@@ -27,11 +25,20 @@ app.get("/", function(req,res){
 //
 // });
 
-app.use(express.static('app'));
+var domain = require("domain").create();
+
+
+//app.use(express.static('app'));
+app.use(express.static('dev'));
+
 
 //app.get("/login/:id/:mode", function(){
 //    res.send(req.params.id+' , ' + req.params.mode);
 //})
+
+app.get("/", function(req,res){
+    res.send("hello~");
+});
 
 app.listen("3333", function(){
     console.log("express listen 완료~");

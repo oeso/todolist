@@ -17,7 +17,9 @@
   },
   "homepage": "https://github.com/oeso/todolist#readme",
   "dependencies": {
-    "express": "^4.16.3"
+    "bson-ext": "^2.0.0",
+    "express": "^4.16.3",
+    "mongodb": "^3.0.10"
   },
   "devDependencies": {
     "grunt": "^1.0.3",
